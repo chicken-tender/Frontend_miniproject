@@ -59,27 +59,6 @@ const WriteDate = styled.div`
 `;
 
 const BoardItem = ({post}) => {
-  const formatter = new Intl.RelativeTimeFormat('ko', { numeric: 'auto' });
-
-  const getRelativeTime = () => {
-    const currentDate = new Date();
-    const postDate = new Date(post.writeDate);
-
-    const seconds = Math.floor((currentDate - postDate) / 1000);
-    const minutes = Math.floor(seconds / 60);
-    const hours = Math.floor(minutes / 60);
-    const days = Math.floor(hours / 24);
-
-    if (days > 0) {
-      return formatter.format(-days, "day");
-    } else if (hours > 0) {
-      return formatter.format(-hours, "hour");
-    } else if (minutes > 0) {
-      return formatter.format(-minutes, "minute");
-    } else {
-      return formatter.format(-seconds, "second");
-    }
-  };
 
   return (
     <BoardItemContainer to={`/post/${post.postNum}`}>
@@ -96,7 +75,7 @@ const BoardItem = ({post}) => {
             }}
           />
           {post.nickname}
-          <WriteDate>‣ {getRelativeTime()}</WriteDate>
+          <WriteDate>‣ {post.writeDate}</WriteDate>
         </UserInfo>
         <PostInfo>
           <ViewCount>

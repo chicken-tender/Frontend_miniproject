@@ -30,7 +30,7 @@ const ImageInput = ({ setShowImageInput, chatRoom, userNum, otherUserNumber, set
     const koreaTimeZone = 'Asia/Seoul';
     const utcNow = new Date();
     const kstNow = utcToZonedTime(utcNow, koreaTimeZone);
-    const createdAt = format(kstNow, 'yy-MM-dd HH:mm', { timeZone: koreaTimeZone });
+    const createdAt = format(kstNow, 'HH:mm', { timeZone: koreaTimeZone });
 
     const newMessage = {
       chatNumber: chatRoom,

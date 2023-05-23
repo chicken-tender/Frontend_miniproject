@@ -22,7 +22,7 @@ const StyledContainer = styled.div`
   margin: 190px 0;
   @media screen and (max-width: 768px) {
     gap: 40px;
-    margin: 60px 0;
+    margin: 160px 3px;
   }
 `;
 
