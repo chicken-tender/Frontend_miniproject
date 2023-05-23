@@ -23,7 +23,7 @@ const Board = styled.div`
 `;
 
 const StyledImg = styled.img`
-  max-width: 50%;
+  max-width: 45%;
   height: auto;
   margin-top: 1.5rem;
   border-radius: 5px;
