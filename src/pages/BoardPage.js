@@ -26,7 +26,7 @@ const BoardName = styled.div`
 const WriteButtonWrapper = styled.div`
   text-align: right;
   padding-top : 30px;
-  margin-right: 240px;
+  margin-right: 190px;
 
   @media (max-width: 400px) {
     margin-right : 40px;

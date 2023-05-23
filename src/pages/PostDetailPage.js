@@ -39,7 +39,7 @@ const TagListWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 95%;
-  padding-left: 20px;
+  padding-left: 8px;
   position: relative;
 
   @media (max-width: 400px) {

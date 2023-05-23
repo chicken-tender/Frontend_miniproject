@@ -10,7 +10,7 @@ const StyledFileInput = styled.div`
   width: 50%;
   position: relative;
   border-radius: 3px;
-  margin-left: 320px;
+  margin-left: 245px;
 
   > input[type='file'] {
     position: absolute;
